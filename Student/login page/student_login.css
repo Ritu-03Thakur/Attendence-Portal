@@ -169,3 +169,12 @@ form .forgot-pw a{
 form a:hover{
     text-decoration: underline;
 }
+
+
+/* media queries */
+@media (max-width:400px){
+    .wrapper {
+        width: 360px;
+        background-color: red;
+    }
+}
