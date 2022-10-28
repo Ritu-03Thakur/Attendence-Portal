@@ -12,7 +12,7 @@ body{
     flex-wrap: wrap;
     margin: 20px;
 }
-.student,.teacher{
+.attendence,.library{
     width: 300px;
     margin: 10px;
     border: 1px solid black;
@@ -23,8 +23,7 @@ body{
     justify-content: center;
     cursor: pointer;
 }
-.student p,.teacher p{
+.attendence p,.library p{
     font-size: large;
     margin-left: 10px;
 }
-
