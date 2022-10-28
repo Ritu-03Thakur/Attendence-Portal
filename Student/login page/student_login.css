@@ -177,4 +177,7 @@ form a:hover{
         width: 360px;
         background-color: red;
     }
+    nav p{
+        font-size: 24px;
+    }
 }
