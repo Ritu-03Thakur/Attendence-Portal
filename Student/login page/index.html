@@ -4,18 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn link for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Student Login</title>
 </head>
 <body>
-    <nav></nav>
+    <nav>
+        <a href="#"><img src="" alt=""></a>
+        <p>Greater Noida Institute of Technology</p>
+    </nav>
     <div class="container">
-        <header>
-            <h1>Student Login</h1>
-            <p>Login using the username and password provided by your college</p>
-        </header>
-        <div class="wrapper"></div>
+        <div class="wrapper">
+            <header>Student Login</header>
+            <div class="bottom">
+                <form action="#">
+                    <div class="field email">
+                        <div class="input-area">
+                            <input type="text" placeholder="Username">
+                            <i class="icon fa-solid fa-user"></i>
+                            <i class="error error-icon fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="error error-txt">Email can't be blank</div>
+                    </div>
+
+                    <div class="field password">
+                        <div class="input-area">
+                            <input type="password" placeholder="Password">
+                            <i class="icon fas fa-lock"></i>
+                            <i class="error error-icon fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="error error-txt">Password can't be blank</div>
+                    </div>
+
+                    <div class="remember_me">
+                        <input type="checkbox" name="" id="">
+                        <p>Remember Me</p>
+                    </div>
+                    <input type="submit" value="Login">
+
+                    <div class="forgot-pw">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </form>
+                
+                
+            </div>
+        </div>
     </div>
+
+
+
     <script src="script.js"></script>
 </body>
 </html>
