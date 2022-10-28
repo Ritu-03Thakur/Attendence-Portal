@@ -171,6 +171,21 @@ form a:hover{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* media queries */
 @media (max-width:400px){
     .wrapper {
@@ -178,5 +193,14 @@ form a:hover{
     }
     nav p{
         font-size: 24px;
+    }
+}
+
+@media (max-width:330px){
+    .wrapper{
+        width:320px;
+    }
+    nav p{
+        font-size: 20px;
     }
 }
