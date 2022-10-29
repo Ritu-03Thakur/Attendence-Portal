@@ -18,8 +18,13 @@ body{
     flex-wrap: wrap;
 }
 .container ul li{
+    list-style: none;
+}
+.container ul li a{
     width: 300px;
+    text-decoration: none;
     margin: 10px;
+    color: black;
     border: 1px solid black;
     height: 100px;
     background-color: #fff;
@@ -29,6 +34,9 @@ body{
     justify-content: center;
     cursor: pointer;
     box-shadow: 7px 7px 7px 0px rgba(0,0,0,0.75);
+}
+.container ul li a i{
+    color: rgb(60, 60, 209);
 }
 .container ul li p{
     font-size: large;
