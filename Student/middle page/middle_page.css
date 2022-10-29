@@ -5,14 +5,16 @@
 }
 body{
     background-color: aliceblue;
-    display: flex;
 }
 .container{
-    display: flex;
-    flex-wrap: wrap;
+    
     margin: 20px;
 }
-.attendence,.library{
+.container ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container ul li{
     width: 300px;
     margin: 10px;
     border: 1px solid black;
@@ -25,7 +27,7 @@ body{
     cursor: pointer;
     box-shadow: 7px 7px 7px 0px rgba(0,0,0,0.75);
 }
-.attendence p,.library p{
+.container ul li p{
     font-size: large;
     margin-left: 10px;
 }
