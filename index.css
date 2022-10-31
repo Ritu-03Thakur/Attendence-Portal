@@ -12,7 +12,16 @@ body{
     flex-wrap: wrap;
     margin: 20px;
 }
-.student,.teacher{
+
+.container ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container ul li{
+    list-style: none;
+}
+
+.container ul li a{
     width: 300px;
     margin: 10px;
     border: 1px solid black;
@@ -22,10 +31,19 @@ body{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
     box-shadow: 7px 7px 7px 0px rgba(0,0,0,0.75);
 }
-.student p,.teacher p{
+.container ul li p{
     font-size: large;
     margin-left: 10px;
 }
-
+.student{
+    background: lightyellow;
+}
+.faculty{
+    background: rgb(181, 227, 243);
+    background-color: rgb(183, 233, 183);
+    background-color: rgb(247, 207, 213);
+}

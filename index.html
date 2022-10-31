@@ -11,24 +11,21 @@
 </head>
 <body>
     <div class="container">
-
-        <div class="student" onclick="student()">
-            <i class="fa-solid fa-user"></i>
-            <p>Student</p>
-        </div>
-        <div class="teacher" onclick="teacher()">
-            <i class="fa-solid fa-chalkboard-user"></i>
-            <p>Teacher</p>
-        </div>
+        <ul>
+            <li>
+                <a href="Student/middle page/middle_page.html" class="student">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Student</p>
+                </a>
+            </li>
+            <li>
+                <a href="Teacher/middle page/middle_page.html" class="faculty">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <p>Faculty</p>
+                </a>
+            </li>
+        </ul>
     </div>
-    <script>
-        function student(){
-            location.href = "Student/login page/student_login.html";
-        }
-        function teacher(){
-            location.href = "Teacher/login page/teachers_login.html";
-        }
-        
-    </script>
+    
 </body>
 </html>
