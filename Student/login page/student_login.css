@@ -209,6 +209,7 @@ form a:hover{
     }
     nav p{
         font-size: 20px;
+        font-weight: 900;
     }
 }
 
@@ -217,7 +218,7 @@ form a:hover{
         width:300px;
     }
     nav p{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 @media (max-width:300px){
@@ -225,6 +226,6 @@ form a:hover{
         width:290px;
     }
     nav p{
-        font-size: 19px;
+        font-size: 17px;
     }
 }
