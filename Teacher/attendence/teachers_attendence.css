@@ -42,3 +42,92 @@ body{
 .filters button:hover{
     background-color: rgb(161, 148, 148);
 }
+
+.main {
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+}
+.main ul{
+    display: inline;
+    /* list-style: none; */
+    width: 100vw;
+}
+.main ul li{
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    justify-content: space-between;
+    margin:10px;
+    height: 45px;
+    align-items: center;
+    box-shadow: rgb(223, 23, 23);
+}
+
+
+
+.cont input{
+    display: none;
+}
+.cont{
+    position: relative;
+
+    /* transform: translate(-50%, -50%); */
+    display: block;
+    width: 60px;
+    height: 30px;
+    border-radius: 50px;
+    /* padding: 2px ; */
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s all ease-in-out;
+    margin-right: 10px;
+}
+.switch::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(241, 65, 65);
+    z-index: -1;
+    transition: inherit;
+    align-items: center;
+}
+.switch{
+    display:block;
+    width: 25px;
+    height:25px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: inherit;
+    margin-top: 3px;
+    margin-left: 3px;
+    
+}
+
+.cont input:checked ~ .switch::before{
+    background-color: #34c759;
+}
+.cont input:checked ~ .switch{
+    margin-left: calc(75% - 14px);
+}
+
+
+.submit{
+    width: 90%;
+    height: 40px;
+    margin: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    background-color: #42e06a;
+
+}
+.submit:hover{
+    background-color: #34c759;
+    box-shadow: cadetblue;
+}
