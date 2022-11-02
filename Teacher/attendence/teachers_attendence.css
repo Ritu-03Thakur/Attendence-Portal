@@ -112,7 +112,7 @@ body{
     background-color: #34c759;
 }
 .cont input:checked ~ .switch{
-    margin-left: calc(75% - 14px);
+    margin-left: calc(75% - 13px);
 }
 
 
