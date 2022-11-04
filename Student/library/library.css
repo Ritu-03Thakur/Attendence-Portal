@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+}
+.scan{
+    top: 0;
+    width: 100%;
+    height: 150px;
+    /* background-color: red; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+}
+.box{
+    display: inline;
+    /* align-content: center; */
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 4px 3px 6px 0px rgba(0,0,0,0.75);
+}
+.box img{
+    margin: 10px 0px 0px 17px;
+    width: 50px;
+    height: 50px;
+}
+
+.box p{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(51, 51, 134);
+}
+.issue h3{
+    padding: 20px 20px;
+    border-bottom: 1px solid black;
+}
+.issue{
+    margin: 5px;
+}
+.issue ul{
+    display: block;
+    margin-top: 20px;
+    background-color: #ccc;
+    
+}
+.issue ul li{
+    border-bottom: 1px solid black;
+    /* display: flex; */
+    list-style: none;
+    grid-auto-flow: row;
+    padding: 5px;
+}
+
+.issue ul li button{
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(74, 74, 187);
+    margin-top: -50px;
+    cursor: pointer;
+    font-weight: 600;
+    float: right;
+}
