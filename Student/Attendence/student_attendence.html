@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn link for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="student_attendence.css">
     <title>Student Attendence</title>
 </head>
@@ -13,20 +15,33 @@
         <h4 class="designation">B.tech 2nd Year | 3rd Sem</h4>
 
         <ul>
-            <li>Attendence</li>
-            <li>Library</li>
-            <li>Events Schedule</li>
-            <li>Feedback</li>
+            <li>
+                <img src="images/community-students.png" alt="">
+                 Attendence</li>
+            <li>
+                <img src="images/library.png" alt="">
+                Library</li>
+            <li>
+                <img src="images/events.png" alt="">
+                Events Schedule</li>
+            <li>
+                <img src="images/feedback.png" alt="">
+                Feedback</li>
+
+            <li id="logout">
+                <p>LogOut</p>
+                <img src="images/logout.png" alt="">
+            </li>
         </ul>
     </header>
     <section>
         <div class="subjects">
-            <button>Overall</button>
-            <button>Computation methods</button>
-            <button>Data Structures</button>
-            <button>Digital Logic and Computer Methods</button>
-            <button>Discrete Mathematics</button>
-            <button>Object Oriented Programming</button>
+            <button id="overall">Overall</button>
+            <button id="cm">Computation methods</button>
+            <button id="ds">Data Structures</button>
+            <button id="dlcd">Digital Logic and Computer Methods</button>
+            <button id="dm">Discrete Mathematics</button>
+            <button id="oops">Object Oriented Programming</button>
             <!-- <button>Indian Knowledge System</button> -->
         </div>
         <div class="show_subjects">
@@ -39,7 +54,10 @@
                 <div class="pie-chart"></div>
             </div>
             <div class="group">
-                <div class="calender"></div>
+                <div class="calender">
+                    <h3>Mark the date </h3>
+                    <input type="date" name="dateDay" id="">
+                </div>
                 <div class="per_day">
                     <h3>Date:- 12/12/12</h3>
                     <table>

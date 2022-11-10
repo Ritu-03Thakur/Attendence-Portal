@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -22,9 +24,10 @@ header{
     /* background: rgb(99, 97, 97); */
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     flex-flow: column;
     text-align: center;
+    /* background-color: red; */
 } 
 
 .profile{
@@ -33,10 +36,37 @@ header{
     background-color: aliceblue;
     width: 120px;
     height: 120px;
+    margin-top: 50px;
 }
-
-
-
+header h3{
+    font-size: 25px;
+}
+header ul{
+    list-style: none;
+    /* background-color: red; */
+}
+header ul li{
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1px 12px;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 10px 2px;
+    cursor: pointer;
+    font-size: large;
+}
+header ul li:hover{
+    background-color: rgb(177, 174, 174);
+}
+header ul li img{
+    margin-right: 15px;
+}
+#logout{
+    margin-top: 110px;
+    justify-content: space-between;
+}
 
 
 
@@ -71,10 +101,13 @@ section{
 
 section .subjects{
     height: 150px;
-    border: 1px solid rgb(253, 2, 2);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 0, 0, 0);
     display: flex;
     align-items: center;
     margin: 10px 10px 0px 10px;
+    background-color: rgba(230, 228, 228, 0);
+    box-shadow: 9px 10px 13px -7px rgba(0,0,0,0.75);
 }
 
  section .subjects button{
@@ -84,32 +117,63 @@ section .subjects{
     padding: 15px;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    
 }
-
-/* .total_attendence { grid-area: total_attendence; }
-.calender { grid-area: calender; }
-.per_day { grid-area: per_day; }
- */
-
+#overall{
+    border: 3px solid  orange;
+}
+#cm{
+    border: 3px solid rgb(228, 68, 68);
+}
+#ds{
+    border: 3px solid lightskyblue;
+}
+#dlcd{
+    border: 3px solid lightgreen;
+}
+#dm{
+    border: 3px solid lightcoral;
+}
+#oops{
+    border: 3px solid lightseagreen;
+}
 section .show_subjects{
-    border: 1px solid green;
+    /* border: 1px solid green; */
+    border-radius: 12px;
+    box-shadow: 6px 7px 12px -1px rgba(0,0,0,0.75);
     height: 76.2%;
     padding: 15px;
-    display:grid;
-    /* grid-template-areas:
-    'total_attendence total_attendence total_attendence  total_attendence'
-    'calender calender per_day per_day';
-    gap: 10px; */
+    background-color:rgba(54, 125, 231, 0);
     margin: 10px 10px 0px 10px;
     display: flex;
     flex-direction: column;
+
 } 
 .group{
     display: flex;
     margin: 12px;
     
 }
+.pie-chart{
+    position: relative;
+    margin-left: 740px;
+    float: right;
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        pink 70deg, 
+        lightblue 0 235deg, 
+        orange 0);
+}
  section .show_subjects .total_attendence{
+    /* position: absolute; */
     height: 150px;
     background-color:  #ccc;
     display: flex;
@@ -130,28 +194,23 @@ section .show_subjects .calender{
     /* margin-top: 20px; */
 }
  section .show_subjects .per_day{
-    height: 280px;
-    width: 260px;
+    height: 300px;
+    width: 480px;
     border: 1px solid #ccc;
     display: inline;
     font-size: large;
     float: right;
-    /* align-items: center; */
-    /* justify-content: center; */
-    text-align: center;
-    /* align-content: center; */
-}
-/* .per_day table{
     align-items: center;
-    align-content: center;
     justify-content: center;
-    justify-items: center;
-} */
+    text-align: center;
+    align-content: center;
+}
+
 .per_day table tr td{
     padding: 10px;
 }
 table{
-    margin-left: 130px;
+    margin-left: 60px;
     border-radius: 3px;
 }
 table, td {
@@ -160,3 +219,4 @@ table, td {
 table th{
     padding: 0px 50px 0px 50px;
 }
+    
