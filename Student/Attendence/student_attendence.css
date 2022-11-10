@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-left: 320px;
+
+}
+ 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    min-height: 108vh;
+    position: absolute;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    width: 315px;
+    /* background: rgb(99, 97, 97); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+} 
+
+.profile{
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: aliceblue;
+    width: 120px;
+    height: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section{
+    min-height: 100vh;
+    /* background-color: red; */
+}
+
+section .subjects{
+    height: 150px;
+    border: 1px solid rgb(253, 2, 2);
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 0px 10px;
+}
+
+ section .subjects button{
+    height: 100px;
+    width: 130px;
+    margin: 0px 20px 0px 20px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* .total_attendence { grid-area: total_attendence; }
+.calender { grid-area: calender; }
+.per_day { grid-area: per_day; }
+ */
+
+section .show_subjects{
+    border: 1px solid green;
+    height: 76.2%;
+    padding: 15px;
+    display:grid;
+    /* grid-template-areas:
+    'total_attendence total_attendence total_attendence  total_attendence'
+    'calender calender per_day per_day';
+    gap: 10px; */
+    margin: 10px 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
+} 
+.group{
+    display: flex;
+    margin: 12px;
+    
+}
+ section .show_subjects .total_attendence{
+    height: 150px;
+    background-color:  #ccc;
+    display: flex;
+    font-size: large;
+    align-items: center;
+    padding-left: 20px;
+    /* justify-content: center; */
+}
+section .show_subjects .calender{
+    height: 150px;
+    width: 450px;
+    border: 1px solid blue;
+    display: flex;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    /* margin-top: 20px; */
+}
+ section .show_subjects .per_day{
+    height: 280px;
+    width: 260px;
+    border: 1px solid #ccc;
+    display: inline;
+    font-size: large;
+    float: right;
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+    /* align-content: center; */
+}
+/* .per_day table{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+} */
+.per_day table tr td{
+    padding: 10px;
+}
+table{
+    margin-left: 130px;
+    border-radius: 3px;
+}
+table, td {
+    border:1px solid black;
+}
+table th{
+    padding: 0px 50px 0px 50px;
+}
