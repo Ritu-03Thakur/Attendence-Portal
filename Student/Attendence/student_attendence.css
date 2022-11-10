@@ -58,7 +58,7 @@ header ul li{
     font-size: large;
 }
 header ul li:hover{
-    background-color: rgb(177, 174, 174);
+    background-color: rgb(235, 230, 230);
 }
 header ul li img{
     margin-right: 15px;
@@ -96,7 +96,7 @@ header ul li img{
 
 section{
     min-height: 100vh;
-    /* background-color: red; */
+    background-color:#fff;
 }
 
 section .subjects{
@@ -142,12 +142,13 @@ section .subjects{
     border: 3px solid lightseagreen;
 }
 section .show_subjects{
-    /* border: 1px solid green; */
     border-radius: 12px;
     box-shadow: 6px 7px 12px -1px rgba(0,0,0,0.75);
     height: 76.2%;
     padding: 15px;
-    background-color:rgba(54, 125, 231, 0);
+    /* background-color:rgba(54, 125, 231, 0); */
+    background-color: #F9FAFB;
+    /* background-color: rgb(235, 230, 230); */
     margin: 10px 10px 0px 10px;
     display: flex;
     flex-direction: column;
@@ -175,7 +176,7 @@ section .show_subjects{
  section .show_subjects .total_attendence{
     /* position: absolute; */
     height: 150px;
-    background-color:  #ccc;
+    background-color:  #fff;
     display: flex;
     font-size: large;
     align-items: center;
@@ -191,12 +192,22 @@ section .show_subjects .calender{
     align-items: center;
     justify-content: center;
     margin-right: 10px;
-    /* margin-top: 20px; */
+    background-color: #fff;
+}
+ section .calender button{
+    color: white;
+    background-color: #005CA5;
+    padding: 5px 12px;
+    cursor: pointer;
+    font-family: serif;
+    border: none;
+    font-weight: 600;
 }
  section .show_subjects .per_day{
     height: 300px;
     width: 480px;
     border: 1px solid #ccc;
+    background-color: #fff;
     display: inline;
     font-size: large;
     float: right;
