@@ -9,7 +9,11 @@
     <title>Student Attendence</title>
 </head>
 <body>
-    <header>
+    <nav>
+        <img src="images/menu.png" alt="3 lines" id="menu">
+        <img src="images/cross (1).png" alt="cross" id="cross">
+    </nav>
+    <header id="header">
         <div class="profile"></div>
         <h3 class="name">Student Name</h3>
         <h4 class="designation">B.tech 2nd Year | 3rd Sem</h4>
@@ -36,7 +40,7 @@
     </header>
     <section>
         <div class="subjects">
-            <button id="overall">Overall</button>
+            <button id="overall_1">Overall</button>
             <button id="cm">Computation methods</button>
             <button id="ds">Data Structures</button>
             <button id="dlcd">Digital Logic and Computer Methods</button>
@@ -45,52 +49,218 @@
             <!-- <button>Indian Knowledge System</button> -->
         </div>
         <div class="show_subjects">
-            <div class="total_attendence">
-                <div>
-                    <h2>Overall Attendence Percentage:100%</h2>
-                    <h4>Total classes:10</h4>
-                    <h4>Attended:10</h4>
-                </div>
-                <div class="pie-chart"></div>
-            </div>
-            <div class="group">
-                <div class="calender">
-                    <h3>Mark the date </h3>
-                    <input type="date" name="dateDay" id="">
-                    <button id="check">Check</button>
-                </div>
-                <div class="per_day">
-                    <h3>Date:- 12/12/12</h3>
-                    <table>
-                        <tr>
-                            <th>Subjects</th>
-                            <th>Classes</th>
-                        </tr>
-                        <tr>
-                            <td>Computational Methods</td>
-                            <td>1/1</td>
-                            </tr>
-                        <tr>
-                            <td>Discrete Mathematics</td>
-                            <td>1/1</td>
-                        </tr>
-                        <tr>
-                            <td>Object Oriented Programming</td>
-                            <td>1/1</td>
-                        </tr>
-                        <tr>
-                            <td>data Structures</td>
-                            <td>1/1</td>
-                        </tr>
-                        <tr>
-                            <td>Computational Methods</td>
-                            <td>1/1</td>
-                        </tr>
+            <div class="overall" id="overall_2">
+                    <div class="total_attendence">
+                        <div>
+                            <h2>Overall Attendence Percentage:100%</h2>
+                            <h4>Total classes:10</h4>
+                            <h4>Attended:10</h4>
+                        </div>
+                        <div class="pie-chart"></div>
+                    </div>
+                    <div class="group">
+                        <div class="calender">
+                            <h3>Mark the date </h3>
+                            <input type="date" name="dateDay" id="">
+                            <button id="check">Check</button>
+                        </div>
+                        <div class="per_day">
+                            <h3>Date:- 12/12/12</h3>
+                            <table>
+                                <tr>
+                                    <th>Subjects</th>
+                                    <th>Classes</th>
+                                </tr>
+                                <tr>
+                                    <td>Computational Methods</td>
+                                    <td>1/1</td>
+                                    </tr>
+                                <tr>
+                                    <td>Discrete Mathematics</td>
+                                    <td>1/1</td>
+                                </tr>
+                                <tr>
+                                    <td>Object Oriented Programming</td>
+                                    <td>1/1</td>
+                                </tr>
+                                <tr>
+                                    <td>data Structures</td>
+                                    <td>1/1</td>
+                                </tr>
+                                <tr>
+                                    <td>Computational Methods</td>
+                                    <td>1/1</td>
+                                </tr>
 
-                    </table>
+                            </table>
+                        </div>
+                    </div>
+            </div>
+            <div class="computational_methods" id="computational_methods">
+                <div class="total_attendence">
+                    <div>
+                        <h2>Computational Methods Attendence Percentage:100%</h2>
+                        <h4>Total classes:10</h4>
+                        <h4>Attended:10</h4>
+                    </div>
+                    <div class="pie-chart"></div>
+                </div>
+                <div class="group">
+                    <div class="calender">
+                        <h3>Mark the date </h3>
+                        <input type="date" name="dateDay" id="">
+                        <button id="check">Check</button>
+                    </div>
+                    <div class="per_day">
+                        <h3>Date:- 12/12/12</h3>
+                        <table>
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Classes</th>
+                            </tr>
+                            <tr>
+                                <td>Computational Methods</td>
+                                <td>1/1</td>
+                                </tr>
+                            
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="data_structures" id="data_structures">
+                <div class="total_attendence">
+                    <div>
+                        <h2>Data Structures Attendence Percentage:100%</h2>
+                        <h4>Total classes:10</h4>
+                        <h4>Attended:10</h4>
+                    </div>
+                    <div class="pie-chart"></div>
+                </div>
+                <div class="group">
+                    <div class="calender">
+                        <h3>Mark the date </h3>
+                        <input type="date" name="dateDay" id="">
+                        <button id="check">Check</button>
+                    </div>
+                    <div class="per_day">
+                        <h3>Date:- 12/12/12</h3>
+                        <table>
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Classes</th>
+                            </tr>
+                            >
+                            <tr>
+                                <td>Data Structures</td>
+                                <td>1/1</td>
+                            </tr>
+                            
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="digital_logic" id="digital_logic">
+                <div class="total_attendence">
+                    <div>
+                        <h2>Digital Logic Attendence Percentage:100%</h2>
+                        <h4>Total classes:10</h4>
+                        <h4>Attended:10</h4>
+                    </div>
+                    <div class="pie-chart"></div>
+                </div>
+                <div class="group">
+                    <div class="calender">
+                        <h3>Mark the date </h3>
+                        <input type="date" name="dateDay" id="">
+                        <button id="check">Check</button>
+                    </div>
+                    <div class="per_day">
+                        <h3>Date:- 12/12/12</h3>
+                        <table>
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Classes</th>
+                            </tr>
+                            
+                            <tr>
+                                <td>Digital Logic & Computer Methods</td>
+                                <td>1/1</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="discrete_mathamatics" id="discrete_mathematics">
+                <div class="total_attendence">
+                    <div>
+                        <h2>Discrete Mathamatics Attendence Percentage:100%</h2>
+                        <h4>Total classes:10</h4>
+                        <h4>Attended:10</h4>
+                    </div>
+                    <div class="pie-chart"></div>
+                </div>
+                <div class="group">
+                    <div class="calender">
+                        <h3>Mark the date </h3>
+                        <input type="date" name="dateDay" id="">
+                        <button id="check">Check</button>
+                    </div>
+                    <div class="per_day">
+                        <h3>Date:- 12/12/12</h3>
+                        <table>
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Classes</th>
+                            </tr>
+                            
+                            <tr>
+                                <td>Discrete Mathematics</td>
+                                <td>1/1</td>
+                            </tr>
+                            
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="object_oriented" id="object_oriented">
+                <div class="total_attendence">
+                    <div>
+                        <h2>Object Oriented Programming Attendence Percentage:100%</h2>
+                        <h4>Total classes:10</h4>
+                        <h4>Attended:10</h4>
+                    </div>
+                    <div class="pie-chart"></div>
+                </div>
+                <div class="group">
+                    <div class="calender">
+                        <h3>Mark the date </h3>
+                        <input type="date" name="dateDay" id="">
+                        <button id="check">Check</button>
+                    </div>
+                    <div class="per_day">
+                        <h3>Date:- 12/12/12</h3>
+                        <table>
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Classes</th>
+                            </tr>
+                            
+                            <tr>
+                                <td>Object Oriented Programming</td>
+                                <td>1/1</td>
+                            </tr>
+                            
+
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <script src="student_attendence.js"></script>
 </body>
 </html>
