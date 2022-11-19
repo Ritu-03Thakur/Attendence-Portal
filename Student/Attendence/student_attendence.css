@@ -22,7 +22,7 @@ nav{
     /* position: absolute; */
 }
 nav #menu{
-    float:right;
+    float:left;
     cursor: pointer;
 }
 nav #cross{
@@ -37,7 +37,6 @@ header{
     top: 0;
     left: 0;
     min-height: 100vh;
-    /* position: absolute; */
     border: 1px solid #ccc;
     z-index: 1000;
     width: 20rem;
@@ -92,7 +91,7 @@ header ul li img{
 
 
 section{
-    position: relative;
+    /* position: relative; */
     height: 100%;
     /* width: calc(100% - 25rem); */
     margin-left: 320px;
@@ -153,7 +152,7 @@ section .show_subjects{
     
     border-radius: 12px;
     box-shadow: 6px 7px 12px -1px rgba(0,0,0,0.75);
-    height: 70vh;
+    height: auto;
     padding: 15px;
     background-color: #F9FAFB;
     margin: 10px 10px 0px 10px;
@@ -182,11 +181,6 @@ section .show_subjects{
     
 }
 .pie-chart{
-    position: relative;
-    margin-left: 740px;
-    float: right;
-    display: block;
-    position: absolute;
     width: 130px;
     height: 130px;
     border-radius: 50%;
@@ -195,18 +189,23 @@ section .show_subjects{
         lightblue 0 235deg, 
         orange 0);
 }
- section .show_subjects .total_attendence{
+section .show_subjects .total_attendence{
     /* position: absolute; */
-    height: 150px;
+    height: auto;
     background-color:  #fff;
     display: flex;
     font-size: large;
     align-items: center;
-    padding-left: 20px;
-    /* justify-content: center; */
+    padding: 20px;
+    justify-content: space-between;
+}
+section .show_subjects .group{
+    display: flex;
+    
+    /* background-color: red; */
 }
 section .show_subjects .calender{
-    height: 150px;
+    height: 10rem;
     width: 450px;
     border: 1px solid blue;
     display: flex;
@@ -239,33 +238,21 @@ section .show_subjects .calender #date{
     font-weight: 600;
 }
  section .show_subjects .per_day{
-    height: 300px;
-    width: 480px;
+    height: auto;
+    width: auto;
     border: 1px solid #ccc;
     background-color: #fff;
-    display: inline;
     font-size: large;
-    float: right;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    align-content: center;
-}
-
-.per_day table tr td{
-    padding: 10px;
+    /* align-content: center; */
 }
 table{
-    margin-left: 60px;
+    margin: 6px;
     border-radius: 3px;
 }
 table, td {
     border:1px solid black;
 }
-table th{
-    padding: 0px 50px 0px 50px;
-}
-    
 
 
 
@@ -287,5 +274,23 @@ table th{
     }
     section{
         margin-left: 0px;
+    }
+}
+@media (max-width:700px){
+    section .show_subjects .group{
+        display: flex;
+        flex-direction: column;
+    }
+    section .show_subjects .group .calender{
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .total_attendence{
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
     }
 }
