@@ -194,7 +194,7 @@ form a:hover{
 /* media queries */
 
 @media (max-width:450px){
-    nav p{
+    #title{
         font-size: 26px;
     }
 }
@@ -203,7 +203,7 @@ form a:hover{
     .wrapper {
         width: 360px;
     }
-    nav p{
+    #title{
         font-size: 24px;
     }
 }
@@ -211,7 +211,7 @@ form a:hover{
     .wrapper{
         width: 320px;
     }
-    nav p{
+    #title{
         font-size: 20px;
         font-weight: 900;
     }
@@ -221,7 +221,7 @@ form a:hover{
     .wrapper{
         width:300px;
     }
-    nav p{
+    #title{
         font-size: 18px;
     }
 }
@@ -229,12 +229,12 @@ form a:hover{
     .wrapper{
         width:290px;
     }
-    nav p{
-        font-size: 17px;
+   #title{
+        font-size: 15px;
     }
 }
-@media (max-width:279px){
+/* @media (max-width:279px){
     nav p{
         font-size:medium;
     }
-}
+} */
