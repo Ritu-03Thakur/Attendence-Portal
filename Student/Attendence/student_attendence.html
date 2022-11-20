@@ -9,10 +9,7 @@
     <title>Student Attendence</title>
 </head>
 <body>
-    <nav>
-        <img src="images/menu.png" alt="3 lines" id="menu">
-        <img src="images/cross (1).png" alt="cross" id="cross">
-    </nav>
+    
     <header id="header">
         <div class="profile"></div>
         <h3 class="name">Student Name</h3>
@@ -39,6 +36,11 @@
         </ul>
     </header>
     <section>
+        <nav>
+            <img src="images/menu.png" alt="3 lines" id="menu">
+            <img src="images/cross (1).png" alt="cross" id="cross">
+        </nav>
+        <!-- main content here -->
         <div class="subjects">
             <button id="overall_1">Overall</button>
             <button id="cm">Computation methods</button>
@@ -46,7 +48,7 @@
             <button id="dlcd">Digital Logic and Computer Methods</button>
             <button id="dm">Discrete Mathematics</button>
             <button id="oops">Object Oriented Programming</button>
-            <!-- <button>Indian Knowledge System</button> -->
+             <!-- <button>Indian Knowledge System</button> -->
         </div>
         <div class="show_subjects">
             <div class="overall" id="overall_2">
@@ -60,8 +62,10 @@
                     </div>
                     <div class="group">
                         <div class="calender">
-                            <h3>Mark the date </h3>
-                            <input type="date" name="dateDay" id="">
+                            <div class="markthedate">
+                                <h3>Mark the date </h3>
+                                <input type="date" name="dateDay" id="date">
+                            </div>
                             <button id="check">Check</button>
                         </div>
                         <div class="per_day">
@@ -108,7 +112,7 @@
                 <div class="group">
                     <div class="calender">
                         <h3>Mark the date </h3>
-                        <input type="date" name="dateDay" id="">
+                        <input type="date" name="dateDay" id="date">
                         <button id="check">Check</button>
                     </div>
                     <div class="per_day">
