@@ -22,7 +22,7 @@ nav{
     /* position: absolute; */
 }
 nav #menu{
-    float:right;
+    float:left;
     cursor: pointer;
 }
 nav #cross{
@@ -37,7 +37,6 @@ header{
     top: 0;
     left: 0;
     min-height: 100vh;
-    /* position: absolute; */
     border: 1px solid #ccc;
     z-index: 1000;
     width: 20rem;
@@ -92,7 +91,7 @@ header ul li img{
 
 
 section{
-    position: relative;
+    /* position: relative; */
     height: 100%;
     /* width: calc(100% - 25rem); */
     margin-left: 320px;
@@ -182,11 +181,10 @@ section .show_subjects{
     
 }
 .pie-chart{
-    position: relative;
-    margin-left: 740px;
+    /* margin-left: 740px; */
     float: right;
     display: block;
-    position: absolute;
+    position: relative;
     width: 130px;
     height: 130px;
     border-radius: 50%;
@@ -195,7 +193,7 @@ section .show_subjects{
         lightblue 0 235deg, 
         orange 0);
 }
- section .show_subjects .total_attendence{
+section .show_subjects .total_attendence{
     /* position: absolute; */
     height: 150px;
     background-color:  #fff;
@@ -203,10 +201,10 @@ section .show_subjects{
     font-size: large;
     align-items: center;
     padding-left: 20px;
-    /* justify-content: center; */
+    justify-content: space-between;
 }
 section .show_subjects .calender{
-    height: 150px;
+    height: 10rem;
     width: 450px;
     border: 1px solid blue;
     display: flex;
@@ -239,31 +237,23 @@ section .show_subjects .calender #date{
     font-weight: 600;
 }
  section .show_subjects .per_day{
-    height: 300px;
-    width: 480px;
+    height: auto;
+    width: auto;
     border: 1px solid #ccc;
     background-color: #fff;
-    display: inline;
     font-size: large;
-    float: right;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    align-content: center;
-}
-
-.per_day table tr td{
-    padding: 10px;
+    /* align-content: center; */
 }
 table{
-    margin-left: 60px;
+    margin: 6px;
     border-radius: 3px;
 }
 table, td {
     border:1px solid black;
 }
 table th{
-    padding: 0px 50px 0px 50px;
+    /* padding: 0px 50px 0px 50px; */
 }
     
 
