@@ -233,7 +233,7 @@ form a:hover{
         font-size: 17px;
     }
 }
-@media (max-width:275px){
+@media (max-width:279px){
     nav p{
         font-size:medium;
     }
