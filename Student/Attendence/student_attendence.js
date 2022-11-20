@@ -1,6 +1,13 @@
 const menu = document.getElementById('menu');
 const cross = document.getElementById('cross');
 const header = document.querySelector('header');
+const overall = document.getElementById('overall_1');
+const cm = document.getElementById('cm');
+const ds = document.getElementById('ds');
+const dlcd = document.getElementById('dlcd');   
+const dm = document.getElementById('dm');
+const oops = document.getElementById('oops');
+
 
 menu.addEventListener('click', function(){
     document.getElementById('menu').style.display = 'none';
@@ -18,20 +25,6 @@ cross.addEventListener('click', function(){
 })
 
 
-
-
-
-
-
-
-
-
-const overall = document.getElementById('overall_1');
-const cm = document.getElementById('cm');
-const ds = document.getElementById('ds');
-const dlcd = document.getElementById('dlcd');   
-const dm = document.getElementById('dm');
-const oops = document.getElementById('oops');
 
 overall_1.addEventListener('click' ,function(){
     document.getElementById('overall_2').style.display = 'block';

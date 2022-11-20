@@ -19,6 +19,7 @@ nav p{
     align-items: center;
     justify-content: center;
     font-size: 30px;
+    color: rgb(32, 42, 70);
 
     
 }
@@ -144,13 +145,16 @@ form input[type="submit"] {
     color: #fff;
     padding: 0;
     border: none;
-    background: rgb(48, 209, 88);
+    background-color: black;
     cursor: pointer;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(0, 0, 0);
     transition: all 0.3s ease;
 }
 form input[type="submit"]:hover {
-    background: rgb(39, 175, 73);
+    /* background: rgb(39, 175, 73); */
+    /* border: none; */
+    background-color: #fff;
+    color: black;
 }
 
 

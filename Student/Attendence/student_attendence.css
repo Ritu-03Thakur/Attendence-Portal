@@ -7,7 +7,7 @@
 body{
     background-color: #fff;
     overflow-x: hidden;
-    padding-left: 320px;
+    margin-left: 320px;
 
 }
 nav{
@@ -39,7 +39,7 @@ header{
     position: absolute;
     border: 1px solid #ccc;
     z-index: 1000;
-    width: 315px;
+    width: 20rem;
     display: flex;
     align-items: center;
     flex-flow: column;
@@ -51,12 +51,12 @@ header{
     border-radius: 50%;
     border: 2px solid black;
     background-color: aliceblue;
-    width: 120px;
-    height: 120px;
-    margin-top: 50px;
+    width: 8rem;
+    height: 8rem;
+    margin-top: 2.5rem;
 }
 header h3{
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 header ul{
     list-style: none;
@@ -65,8 +65,8 @@ header ul li{
     border: 1px solid #ccc;
     border-radius: 6px;
     padding: 1px 12px;
-    width: 250px;
-    height: 50px;
+    width: 15.5rem;
+    height: 3.1rem;
     display: flex;
     align-items: center;
     margin: 10px 2px;
@@ -88,36 +88,16 @@ header ul li img{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 section{
-    min-height: 100vh;
-    background-color:#fff;
+
+    max-height: 100%;
+    margin-top: -10px;
+    background-color:red;
 }
 
 section .subjects{
     height: 150px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border: 1px solid rgba(255, 0, 0, 0);
     display: flex;
     align-items: center;
@@ -125,7 +105,6 @@ section .subjects{
     background-color: #F9FAFB;
     box-shadow: -1px 6px 22px -7px rgba(0,0,0,0.87);
     overflow: auto;
-    /* white-space: nowrap; */
 }
 
  section .subjects button{
@@ -144,11 +123,12 @@ section .subjects{
 }
 #overall_1{
     border: 3px solid  orange;
-    /* background-color: orange; */
+    /* background-image: linear-gradient(to bottom right, rgb(248, 186, 71), orange); */
 }
 #cm{
     border: 3px solid rgb(228, 68, 68);
-    /* background-color: rgb(228, 68, 68); */
+    /* color: white; */
+    /* background-image: linear-gradient(to bottom right, rgb(248, 70, 70), rgb(255, 60, 0)); */
 }
 #ds{
     border: 3px solid lightskyblue;
@@ -274,7 +254,14 @@ table th{
 
 
 /* media queries */
+@media (max-width:1250px){
+    .pie-chart{
+        background-color: red;
+    }
+}
+@media (max-width:1200px){
 
+}
 @media (max-width:1000px){
     nav{
         display: block;
@@ -283,6 +270,6 @@ table th{
         left: -350px;
     }
     section{
-        margin-left: 300px;
+        margin-left: 0px;
     }
 }
