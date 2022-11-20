@@ -152,7 +152,7 @@ section .show_subjects{
     
     border-radius: 12px;
     box-shadow: 6px 7px 12px -1px rgba(0,0,0,0.75);
-    height: 70vh;
+    height: auto;
     padding: 15px;
     background-color: #F9FAFB;
     margin: 10px 10px 0px 10px;
@@ -181,10 +181,6 @@ section .show_subjects{
     
 }
 .pie-chart{
-    /* margin-left: 740px; */
-    float: right;
-    display: block;
-    position: relative;
     width: 130px;
     height: 130px;
     border-radius: 50%;
@@ -195,13 +191,18 @@ section .show_subjects{
 }
 section .show_subjects .total_attendence{
     /* position: absolute; */
-    height: 150px;
+    height: auto;
     background-color:  #fff;
     display: flex;
     font-size: large;
     align-items: center;
-    padding-left: 20px;
+    padding: 20px;
     justify-content: space-between;
+}
+section .show_subjects .group{
+    display: flex;
+    
+    /* background-color: red; */
 }
 section .show_subjects .calender{
     height: 10rem;
@@ -252,10 +253,6 @@ table{
 table, td {
     border:1px solid black;
 }
-table th{
-    /* padding: 0px 50px 0px 50px; */
-}
-    
 
 
 
@@ -277,5 +274,23 @@ table th{
     }
     section{
         margin-left: 0px;
+    }
+}
+@media (max-width:700px){
+    section .show_subjects .group{
+        display: flex;
+        flex-direction: column;
+    }
+    section .show_subjects .group .calender{
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .total_attendence{
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
     }
 }
