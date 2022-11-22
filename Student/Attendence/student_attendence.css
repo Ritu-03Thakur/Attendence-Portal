@@ -89,6 +89,7 @@ header ul li img{
 }
 #logout li{
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 
