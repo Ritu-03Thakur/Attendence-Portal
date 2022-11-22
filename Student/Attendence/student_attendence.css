@@ -62,6 +62,7 @@ header h3{
 }
 header ul{
     list-style: none;
+    justify-content: space-around;
 }
 header ul li{
     border: 1px solid #ccc;
@@ -82,11 +83,13 @@ header ul li img{
     margin-right: 15px;
 }
 #logout{
-    margin-top: 110px;
+    position: fixed;
     bottom: 0;
     justify-content: space-between;
 }
-
+#logout li{
+    justify-content: space-between;
+}
 
 
 
