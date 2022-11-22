@@ -11,22 +11,22 @@ body{
 
 }
 nav{
-    background-color: antiquewhite;
-    /* float:inline-end; */
+    background-color:#fff;
+    border-bottom: 1px solid #ccc;
     width: 100%;
     height: 55px;
-    display: flex;
-    align-items: center;
+    /* align-items: center; */
     padding-left: 14px;
-    /* display: none; */
-    /* position: absolute; */
+    display: none;
 }
 nav #menu{
-    float:left;
+    float:right;
+    margin: 12px 22px;
     cursor: pointer;
 }
 nav #cross{
-    font-weight: 700;
+    float: right;
+    margin: 12px 22px;
     cursor: pointer;
     display: none;
 }
@@ -177,7 +177,7 @@ section .show_subjects{
 }
 .group{
     display: flex;
-    margin: 12px;
+    margin: 42px 12px;
     
 }
 .pie-chart{
@@ -190,19 +190,17 @@ section .show_subjects{
         orange 0);
 }
 section .show_subjects .total_attendence{
-    /* position: absolute; */
     height: auto;
     background-color:  #fff;
     display: flex;
-    font-size: large;
+    font-size: 1.25rem;
     align-items: center;
     padding: 20px;
     justify-content: space-between;
 }
 section .show_subjects .group{
     display: flex;
-    
-    /* background-color: red; */
+    justify-content: space-around;
 }
 section .show_subjects .calender{
     height: 10rem;
@@ -244,7 +242,6 @@ section .show_subjects .calender #date{
     background-color: #fff;
     font-size: large;
     text-align: center;
-    /* align-content: center; */
 }
 table{
     margin: 6px;
@@ -278,11 +275,23 @@ table, td {
 }
 @media (max-width:700px){
     section .show_subjects .group{
-        display: flex;
         flex-direction: column;
     }
     section .show_subjects .group .calender{
         width: 100%;
+    }
+    section .show_subjects .per_day{
+        margin-top: 12px;
+    }
+}
+@media (max-width:750px){
+    html{
+        font-size: 85%;
+    }
+}
+@media (max-width:650px){
+    html{
+        font-size: 75%;
     }
 }
 @media (max-width: 600px){

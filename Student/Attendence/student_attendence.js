@@ -12,10 +12,8 @@ const oops = document.getElementById('oops');
 menu.addEventListener('click', function(){
     document.getElementById('menu').style.display = 'none';
     document.getElementById('cross').style.display = 'block';
-    document.getElementById('header').style.marginLeft = '-350px';
+    document.getElementById('header').style.marginLeft = '350px';
     document.getElementsByTagName('nav').style.marginLeft = '-100px';
-    document.getElementById('subjects').style.width = '100vw';
-    // document.querySelector('nav').style.width = '70%';
 
 })
 cross.addEventListener('click', function(){
